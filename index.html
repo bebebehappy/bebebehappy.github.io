@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bebebehappy | 学习Linux运维</title>
+    <style>
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        body {font-family: sans-serif; background: #f8fafc; color: #1e293b; max-width: 700px; margin: 0 auto; padding: 2rem; line-height: 1.6;}
+        h1 {font-size: 1.5rem; margin-bottom: 0.3rem;}
+        .goal {color: #475569; margin-bottom: 1.5rem;}
+        .ok {color: #16a34a; font-weight: bold; margin-bottom: 1.5rem;}
+        h2 {font-size: 1rem; margin: 1.5rem 0 0.5rem; padding-bottom: 0.3rem; border-bottom: 2px solid #e2e8f0;}
+        ul {padding-left: 1.2rem; margin-bottom: 1rem;}
+        li {margin: 0.4rem 0;}
+        code {background: #e2e8f0; padding: 0.15rem 0.4rem; border-radius: 3px; font-size: 0.9rem;}
+    </style>
+</head>
+<body>
+    <h1>bebebehappy</h1>
+    <p class="goal">目标：Linux / 系统运维 / 基础服务管理</p>
+    
+    <p class="ok">✅ 当前环境：Ubuntu + Nginx 1.24.0 — 本页面就是亲手部署的</p>
+
+    <h2>已完成</h2>
+    <ul>
+        <li>搭建Nginx静态站点：<code>sites-available</code> + <code>sites-enabled</code> 管理配置</li>
+        <li>文件与权限：用<code>chown/chmod</code> 设置安全目录，不直接用root跑服务</li>
+        <li>服务管理：<code>nginx -t</code> 检查 → <code>reload</code> 平滑更新 → <code>systemctl status</code> 确认状态</li>
+        <li>路径与结构：网页放<code>/var/www/</code>，配置放<code>/etc/nginx/</code>，遵循Linux标准</li>
+    </ul>
+
+    <h2>正在学</h2>
+    <ul>
+        <li>HTTPS/SSL 证书配置</li>
+        <li>UFW 防火墙规则</li>
+        <li>日志查看与简单分析</li>
+        <li>Docker 容器基础</li>
+    </ul>
+
+    <h2>学习思路</h2>
+    <ul>
+        <li>不依赖一键脚本 → 亲手敲命令理解每一步</li>
+        <li>先保证稳定运行 → 再优化安全与效率</li>
+        <li>每做一步记录流程 → 能复现、能排查</li>
+    </ul>
+</body>
+</html>
